@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMI Calculator</title>
+    
+    <meta name="description" content="JS app to calculates Body Mass Index">
+    <meta name="author" content="Supritha">
+    <link rel="stylesheet" href="./bmi.css">
+     <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <h1 style="color: #fff;">The Web page Made withh the html css and js</h1>
+    <h2 style="color: #000000;;">Made By sandeep <i class='bx bx-heart' ></i></h2>
+    <div class="bmi">
+      <h2>BMI Calculator</h2><br>
+     
+      <p class="text">Height in cm</p><input type="text" id="height">
+      <p class="text">Weight in kg</p><input type="text" id="weight">
+      <p id="result"></p><button id="btn">Calculate</button>
+    </div>
+    <div class="container">
+        
+        <div class="r">
+            <h1 id="rr">BMI</h1><br>
+            <p>    BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+            <br>
+           
+        </div> 
+      <table>
+        <thead>
+          <tr>
+            <th>BMI</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-column="bmi">less than 18.5</td>
+            <td data-column="category">Underweight</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">between 18.5 and 24.9</td>
+            <td data-column="category">Ideal</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">between 25 and 29.9</td>
+            <td data-column="category">Overweight</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">over 30 </td>
+            <td data-column="category">Obesity</td>
+          </tr>
+        </tbody>
+     
+      </table>
+    
+    </div>
+    
+  
+    <script src="./script.js"></script>
+    <footer class="footer">
+      <p class="footer__title">Sandeep Kumar</p>
+      <div class="footer__social">
+          <a href=" " class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+          <a href=" " class="footer__icon"><i class='bx bxl-github' ></i></a>
+          <a href=" " class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+          <a href=" " class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+      </div>
+      <p>&#169; 2021 copyright all right reserved</p>
+     </footer>
+  </body>
+</html>
